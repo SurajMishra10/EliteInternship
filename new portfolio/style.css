@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 40px;
+    background:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 100px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.Logo {
+    margin-left: 20px;
+}
+
+.Logo span {
+    color: rgb(241, 32, 172, 0.849);
+}
+
+
+section {
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.left {
+    width: 400px;
+    height: 400px;
+    margin-top: 12%;
+}
+
+.left .name {
+    display: flex;
+    align-items: center;
+}
+
+.name span {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(241, 32, 172, 0.849);
+}
+
+.left .firstBtn {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(241, 32, 172, 0.849);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.btn .secBtn {
+    border: 2px solid rgba(241, 32, 172, 0.849);
+    border-radius: 3px;
+    font-weight: 700;
+    color: rgba(241, 32, 172, 0.849);
+    cursor: pointer;
+}
+
+.left img {
+    width: 150px;
+    height: 120px;
+
+    cursor: pointer;
+}
+
+ img {
+    margin-top: 0px;
+    height: 590px;
+    width: 400px;
+    
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+}
+
+progress {
+    width: 400px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin-top: 50px;
+}
+header .menu-btn i {
+    color: rgba(241, 32, 172, 0.849);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media screen and (max-width:940px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    header .menu-btn i{
+        display: block;
+    }
+    header {
+        height: 30px;
+        background:none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 50px 5px 20px;
+
+    }
+
+    header ul {
+        position: fixed;
+        top: 20px;
+        left: -120%;
+        background-color: rgba(241, 32, 172, 0.849);
+        width: 100%;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        transition:  all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    header ul li{
+        margin: 60px 0;
+    }
+
+    section {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+    }
+    .left{
+        width: 80%;
+    }
+
+    .left .name {
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .name span {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(241, 32, 172, 0.849);
+    }
+
+    .left .firstBtn {
+        width: 70px;
+    }
+
+    .btn {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .left .icon{
+        border: none;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    img{
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    box-shadow: -2px 2px 15px 10px rgba(241, 32, 172, 0.849);
+    border-radius: 50%;
+}
+    .skill {
+        width: 90%;
+        margin-top: 250px;
+
+    }
+
+    .skill h1 {
+        font-size: 20px;
+    }
+
+    progress {
+        width: 160px;
+        height: 10px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+
+
+}

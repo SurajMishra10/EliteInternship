@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#1abc9c, #1abc9c), url('images/backgroundImage.jpg');
+    background-size: 100% 40%, 100% 100%;
+    background-position: bottom, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#icon {
+    width: 150px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.right {
+    flex-basis: 50%;
+    color: white;
+    margin-top: 200px;
+    max-width: 500px;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.2);
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-top: 140px;
+    padding: 30px 20px;
+    color: white;
+}
+input[type ="text"]{
+    padding: 10px;
+    width: 80%;
+    margin: 10px 20px;
+}
+
+input[type="checkbox"] {
+    padding: 10px;
+    border: none;
+    margin: 10px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    width: 50%;
+    margin: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.counter h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.right h2 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right h1 {
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 400px){
+    header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(#1abc9c, #1abc9c), url('images/backgroundImage.jpg');
+        background-size: 100% 40%, 100% 100%;
+        background-position: bottom, center;
+        background-repeat: no-repeat, no-repeat;
+    }
+    #icon {
+        width: 130px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+ 
+    .form{
+        width: 80%;
+        height: 250px;
+        margin: auto;
+        margin-top: 80px;
+        padding: 10px 20px;
+        color: white;
+    }
+    .right {
+        height: 200px;
+        margin-top: 50px;
+    }
+    .counter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    #days, #hours, #minutes, #seconds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .counter h1{
+        font-size: 50px;
+    }
+}
